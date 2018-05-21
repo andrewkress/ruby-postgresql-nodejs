@@ -13,8 +13,11 @@ install:
   - echo "install nothing!"
 
 script:
-  - echo "no tests!"
-
-after_success:
   - docker --version
   - docker build -t ruby-postgresql-nodejs .
+
+deploy:
+  provider: script
+  script: echo "deploy to dockerhub if on master"
+  on:
+    branch: master
