@@ -1,0 +1,16 @@
+sudo: required
+
+language: ruby
+
+services:
+  - docker
+
+install:
+  - echo "install nothing!"
+
+script:
+  - echo "no tests!"
+
+after_success:
+  - docker --version
+  - docker build -t ruby-postgresql-nodejs .
