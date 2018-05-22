@@ -18,6 +18,6 @@ script:
 
 deploy:
   provider: script
-  script: echo "deploy to dockerhub if on master"
+  script: bash deploy.sh
   on:
     branch: master
