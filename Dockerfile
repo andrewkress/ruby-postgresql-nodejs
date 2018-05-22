@@ -7,3 +7,4 @@ RUN apt-get update \
   && apt-get install sudo \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+ENV BUNDLE_APP_CONFIG=""
