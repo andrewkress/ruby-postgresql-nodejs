@@ -8,7 +8,7 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x | bash \
   && apt-get install -y postgresql postgresql-contrib nodejs \
   && apt-get install sudo \
   && apt-get clean \
-  && npm install -g yarn@berry
+  && npm install -g yarn@berry \
   && gem update bundler \
   && gem update --system \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
